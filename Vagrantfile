@@ -53,7 +53,8 @@ end
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Use ubuntu 14.04
-  config.vm.box = "ubuntu/trusty32"
+  config.vm.box = "ubuntu/trusty64" # must use 64 because mozilla-download needs to download
+  # linux64-mulet. There is no linux-mulet for 32 bit machine
 
   # Run the bootsrap script on start.
   # config.vm.provision "shell", inline: $bootstrap
