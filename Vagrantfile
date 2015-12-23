@@ -53,7 +53,7 @@ end
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Use ubuntu 14.04
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/trusty32"
 
   # Run the bootsrap script on start.
   # config.vm.provision "shell", inline: $bootstrap
